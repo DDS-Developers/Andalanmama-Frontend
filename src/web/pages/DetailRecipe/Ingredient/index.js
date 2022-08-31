@@ -5,6 +5,7 @@ import Text from '../../../components/Text';
 import Button from '../../../components/Button';
 import Container from '../../../components/Page/Container';
 import Wrapper from './Wrapper';
+import Share from '../../../components/Share';
 
 const Ingredient = props => {
   const { ingredients } = props;
@@ -39,6 +40,7 @@ const Ingredient = props => {
                 );
               })}
             </ul>
+            <Share />
           </div>
           <div className="_ingredient--action">
             <Button

@@ -3,6 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Wrapper from './Wrapper';
 import Title from '../../../components/Title';
+import Share from '../../../components/Share';
+
 const Detail = props => {
   const { article } = props;
 
@@ -21,6 +23,7 @@ const Detail = props => {
           dangerouslySetInnerHTML={{ __html: JSON.parse(article.body) }}
         />
       </div>
+      <Share />
     </Wrapper>
   );
 };
